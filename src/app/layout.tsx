@@ -8,6 +8,10 @@ const inter = Inter({ subsets: ['latin'] })
 export const metadata: Metadata = {
   title: 'Pro Max Tv Player',
   description: 'Appareil de divertissement Android TV premium avec 2 Go de RAM, 16 Go de ROM, processeur Quad-Core (Édition 2026)',
+  icons: {
+    icon: '/logo.png',
+    apple: '/logo.png',
+  },
 }
 
 export default function RootLayout({
