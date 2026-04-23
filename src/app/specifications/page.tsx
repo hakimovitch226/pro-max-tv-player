@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Cpu, HardDrive, Monitor, Wifi, Zap, Tv } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 const specs = [
   { icon: Cpu, label: 'Processeur', value: 'Quad-Core 1.8 GHz — Édition 2026', color: 'text-violet-500' },
@@ -67,9 +68,7 @@ export default function Specifications() {
         </div>
       </main>
 
-      <footer className="py-6 border-t border-slate-800 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Pro Max Tv Player. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

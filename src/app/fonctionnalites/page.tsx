@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Tv, Wifi, Monitor, Zap, Headphones, Shield, Gamepad2, Download } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 const features = [
   {
@@ -94,9 +95,7 @@ export default function Fonctionnalites() {
         </div>
       </main>
 
-      <footer className="py-6 border-t border-slate-800 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Pro Max Tv Player. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

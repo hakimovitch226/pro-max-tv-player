@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { Phone, Mail, MessageCircle, Clock, MapPin } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 export default function Contact() {
   return (
@@ -29,7 +30,7 @@ export default function Contact() {
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {[
                 { icon: MessageCircle, title: 'WhatsApp', detail: 'Cliquez pour nous écrire', desc: 'Moyen le plus rapide — réponse en moins d\'1 heure', color: 'text-violet-500' },
-                { icon: Mail, title: 'Email', detail: 'contact@promaxtvplayer.com', desc: 'Pour les demandes détaillées — réponse sous 24h', color: 'text-purple-500' },
+                { icon: Mail, title: 'Email', detail: 'contact@promaxtvbox.com', desc: 'Pour les demandes détaillées — réponse sous 24h', color: 'text-purple-500' },
                 { icon: Phone, title: 'Téléphone', detail: 'Disponible sur demande', desc: 'Assistance téléphonique 9h – 21h', color: 'text-violet-500' },
                 { icon: Clock, title: 'Horaires', detail: '7j/7 — 9h à 21h', desc: 'Support WhatsApp disponible 24h/24', color: 'text-purple-500' },
               ].map((c, i) => (
@@ -60,9 +61,7 @@ export default function Contact() {
         </div>
       </main>
 
-      <footer className="py-6 border-t border-slate-800 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Pro Max Tv Player. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }

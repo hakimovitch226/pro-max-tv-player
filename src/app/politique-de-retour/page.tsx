@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 import { PackageCheck, RefreshCw, Clock, CheckCircle } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import Footer from '@/components/Footer'
 
 export default function PolitiqueRetour() {
   return (
@@ -61,9 +62,7 @@ export default function PolitiqueRetour() {
         </div>
       </main>
 
-      <footer className="py-6 border-t border-slate-800 text-center text-gray-500 text-sm">
-        <p>&copy; 2026 Pro Max Tv Player. Tous droits réservés.</p>
-      </footer>
+      <Footer />
     </div>
   )
 }
