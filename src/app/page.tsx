@@ -32,9 +32,6 @@ export default function Home() {
                 Pro Max Tv Player
               </span>
             </Link>
-            <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20voudrais%20commander%20le%20Pro%20Max%20TV%20Player" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-violet-600 to-purple-500 px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
-              Commander
-            </a>
           </div>
         </div>
       </nav>

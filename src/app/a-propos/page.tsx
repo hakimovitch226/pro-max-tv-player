@@ -14,7 +14,6 @@ export default function APropos() {
               <Image src="/logo.png" alt="Logo" width={36} height={36} style={{ filter: 'brightness(1.1) saturate(1.2)' }} />
               <span className="text-xl font-bold bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">Pro Max Tv Player</span>
             </Link>
-            <Link href="/#order" className="bg-gradient-to-r from-violet-600 to-purple-500 px-5 py-2 rounded-full font-semibold text-sm hover:shadow-lg transition-all">Commander</Link>
           </div>
         </div>
       </nav>
