@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion'
 import { Cpu, HardDrive, Zap, Wifi, CheckCircle, Truck, Headphones, Lock, Phone, Monitor } from 'lucide-react'
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Home() {
   const inTheBox = [
@@ -19,7 +20,7 @@ export default function Home() {
       <nav className="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            <div className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-3">
               <Image
                 src="/logo.png"
                 alt="Pro Max Tv Player Logo"
@@ -27,10 +28,10 @@ export default function Home() {
                 height={40}
                 style={{ filter: 'brightness(1.1) saturate(1.2)' }}
               />
-              <span className="text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">
+              <span className="text-lg sm:text-2xl font-bold bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">
                 Pro Max Tv Player
               </span>
-            </div>
+            </Link>
             <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20voudrais%20commander%20le%20Pro%20Max%20TV%20Player" target="_blank" rel="noopener noreferrer" className="bg-gradient-to-r from-violet-600 to-purple-500 px-6 py-2 rounded-full font-semibold hover:shadow-lg transition-all duration-300">
               Commander
             </a>
@@ -47,7 +48,7 @@ export default function Home() {
               animate={{ opacity: 1, x: 0 }}
               transition={{ duration: 0.8 }}
             >
-              <h1 className="text-5xl md:text-6xl font-bold leading-tight mb-6">
+              <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-6">
                 Transformez votre divertissement à domicile avec{' '}
                 <span className="bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">
                   Pro Max Tv Player
@@ -72,10 +73,10 @@ export default function Home() {
             >
               <div className="relative flex items-center justify-center">
                 {/* Outer glow ring */}
-                <div className="absolute w-[420px] h-[420px] rounded-full bg-gradient-to-br from-violet-600/30 to-purple-500/10 blur-2xl" />
+                <div className="absolute w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] lg:w-[420px] lg:h-[420px] rounded-full bg-gradient-to-br from-violet-600/30 to-purple-500/10 blur-2xl" />
                 {/* Rotating border ring */}
                 <motion.div
-                  className="absolute w-[380px] h-[380px] rounded-full border-2 border-violet-500/40"
+                  className="absolute w-[230px] h-[230px] sm:w-[300px] sm:h-[300px] lg:w-[380px] lg:h-[380px] rounded-full border-2 border-violet-500/40"
                   animate={{ rotate: 360 }}
                   transition={{ duration: 12, repeat: Infinity, ease: 'linear' }}
                   style={{
@@ -84,9 +85,9 @@ export default function Home() {
                   }}
                 />
                 {/* Static inner ring */}
-                <div className="absolute w-[340px] h-[340px] rounded-full border border-purple-500/20" />
+                <div className="absolute w-[200px] h-[200px] sm:w-[270px] sm:h-[270px] lg:w-[340px] lg:h-[340px] rounded-full border border-purple-500/20" />
                 {/* Image circle */}
-                <div className="relative w-[320px] h-[320px] rounded-full overflow-hidden border-4 border-violet-600/60 shadow-[0_0_40px_rgba(139,92,246,0.5)]">
+                <div className="relative w-[180px] h-[180px] sm:w-[250px] sm:h-[250px] lg:w-[320px] lg:h-[320px] rounded-full overflow-hidden border-4 border-violet-600/60 shadow-[0_0_40px_rgba(139,92,246,0.5)]">
                   <img
                     src="/Promaxtvbox.PNG"
                     alt="Pro Max Tv Player 2026"
