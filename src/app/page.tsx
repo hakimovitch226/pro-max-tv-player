@@ -68,7 +68,7 @@ export default function Home() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="flex justify-center"
             >
-              <div className="relative flex items-center justify-center">
+              <div className="relative flex items-center justify-center w-[280px] h-[280px] sm:w-[360px] sm:h-[360px] lg:w-[480px] lg:h-[480px]">
                 {/* Outer glow ring */}
                 <div className="absolute w-[320px] h-[320px] sm:w-[400px] sm:h-[400px] lg:w-[480px] lg:h-[480px] rounded-full bg-gradient-to-br from-violet-600/30 to-purple-500/10 blur-2xl" />
                 {/* Rotating border ring */}
