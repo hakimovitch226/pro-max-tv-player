@@ -1,5 +1,7 @@
 'use client'
 
+import { fireWhatsAppConversion } from '@/lib/gtag'
+
 export default function WhatsAppButton() {
   const whatsappUrl = `https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F`
 
@@ -9,6 +11,7 @@ export default function WhatsAppButton() {
       target="_blank"
       rel="noopener noreferrer"
       aria-label="Contactez-nous sur WhatsApp"
+      onClick={fireWhatsAppConversion}
       style={{
         position: 'fixed',
         bottom: '24px',

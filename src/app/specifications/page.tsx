@@ -4,6 +4,7 @@ import { Cpu, HardDrive, Monitor, Wifi, Zap, Tv } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { fireWhatsAppConversion } from '@/lib/gtag'
 
 const specs = [
   { icon: Cpu, label: 'Processeur', value: 'Quad-Core 1.8 GHz — Édition 2026', color: 'text-violet-500' },
@@ -60,7 +61,7 @@ export default function Specifications() {
 
             <div className="mt-12 bg-gradient-to-r from-violet-600/20 to-purple-500/20 border border-violet-600/50 rounded-2xl p-8 text-center">
               <p className="text-lg text-gray-300 mb-4">Prêt à commander votre <strong className="text-white">Pro Max TV Player</strong> ?</p>
-              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
+              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F" target="_blank" rel="noopener noreferrer" onClick={fireWhatsAppConversion} className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
                 Commander maintenant — €34
               </a>
             </div>

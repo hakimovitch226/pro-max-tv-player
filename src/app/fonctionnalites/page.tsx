@@ -4,6 +4,7 @@ import { Tv, Wifi, Monitor, Zap, Headphones, Shield, Gamepad2, Download } from '
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
+import { fireWhatsAppConversion } from '@/lib/gtag'
 
 const features = [
   {
@@ -87,7 +88,7 @@ export default function Fonctionnalites() {
             </div>
 
             <div className="mt-12 text-center">
-              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
+              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F" target="_blank" rel="noopener noreferrer" onClick={fireWhatsAppConversion} className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
                 Commander votre Pro Max TV Player — €34
               </a>
             </div>
