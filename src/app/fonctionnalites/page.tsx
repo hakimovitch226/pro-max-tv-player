@@ -87,9 +87,9 @@ export default function Fonctionnalites() {
             </div>
 
             <div className="mt-12 text-center">
-              <Link href="/#order" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
+              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20voudrais%20commander%20le%20Pro%20Max%20TV%20Player" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
                 Commander votre Pro Max TV Player — €34
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

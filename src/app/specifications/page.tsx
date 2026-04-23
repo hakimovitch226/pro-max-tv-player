@@ -60,9 +60,9 @@ export default function Specifications() {
 
             <div className="mt-12 bg-gradient-to-r from-violet-600/20 to-purple-500/20 border border-violet-600/50 rounded-2xl p-8 text-center">
               <p className="text-lg text-gray-300 mb-4">Prêt à commander votre <strong className="text-white">Pro Max TV Player</strong> ?</p>
-              <Link href="/#order" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
+              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20voudrais%20commander%20le%20Pro%20Max%20TV%20Player" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
                 Commander maintenant — €34
-              </Link>
+              </a>
             </div>
           </motion.div>
         </div>

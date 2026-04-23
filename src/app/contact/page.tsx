@@ -53,7 +53,7 @@ export default function Contact() {
               <MessageCircle className="w-12 h-12 text-violet-500 mx-auto mb-4" />
               <h2 className="text-2xl font-bold mb-3">Commander via WhatsApp</h2>
               <p className="text-gray-300 mb-6">La façon la plus rapide de passer votre commande de <strong className="text-white">Pro Max TV Player</strong> à seulement <strong className="text-white">€34</strong>.</p>
-              <a href="/#order" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
+              <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20voudrais%20commander%20le%20Pro%20Max%20TV%20Player" target="_blank" rel="noopener noreferrer" className="inline-block bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-bold hover:shadow-xl transition-all">
                 Commander maintenant
               </a>
             </div>
