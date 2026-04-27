@@ -5,7 +5,7 @@ import { useRouter } from 'next/navigation'
 import { motion } from 'framer-motion'
 import {
   Star, CheckCircle, Truck, Headphones, Lock,
-  ShoppingCart, Cpu, HardDrive, Monitor, Wifi, Zap, User
+  ShoppingCart, User
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -59,14 +59,6 @@ const reviews = [
   },
 ]
 
-const features = [
-  { icon: Cpu, label: 'Processeur Quad-Core 2026', desc: 'Performances ultra-rapides sans lag' },
-  { icon: HardDrive, label: '2 Go RAM + 16 Go ROM', desc: 'Multitâche fluide, stockage généreux' },
-  { icon: Monitor, label: '4K Ultra HD + HDR', desc: 'Qualité image cinématographique' },
-  { icon: Wifi, label: 'Wi-Fi Double Bande', desc: 'Streaming sans coupure 2,4/5 GHz' },
-  { icon: Zap, label: 'Android TV dernière version', desc: 'Accès à toutes les applications' },
-  { icon: CheckCircle, label: 'Plug & Play', desc: 'Prêt en 5 minutes chrono' },
-]
 
 function StarRating({ rating }: { rating: number }) {
   return (
@@ -294,57 +286,92 @@ export default function ProductPage() {
           </div>
         </section>
 
-        {/* Description & Features */}
+        {/* Description & Experience */}
         <section className="px-4 sm:px-6 lg:px-8 py-16">
-          <div className="max-w-6xl mx-auto">
-            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
-              <h2 className="text-3xl font-bold text-center mb-4">Description du <span className="bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">Pro Max TV Player</span></h2>
-              <p className="text-center text-gray-400 mb-12 max-w-2xl mx-auto">Tout ce qu'il faut savoir sur le ProMaxTV — la box Android la plus performante de 2026</p>
+          <div className="max-w-6xl mx-auto space-y-20">
 
-              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center mb-14">
-                <div className="space-y-5 text-gray-300 leading-relaxed">
-                  <p>Le <strong className="text-white">Pro Max TV Player</strong> est un Android TV Box de dernière génération conçu pour transformer n'importe quelle télévision en un centre de divertissement intelligent. Compact, puissant et ultra-facile à installer, il représente la solution idéale pour tous ceux qui souhaitent profiter d'un streaming 4K sans compromis.</p>
-                  <p>Grâce à son processeur <strong className="text-white">Quad-Core Édition 2026</strong> couplé à <strong className="text-white">2 Go de RAM</strong> et <strong className="text-white">16 Go de stockage</strong>, le <strong className="text-white">ProMaxTV</strong> gère sans effort Netflix, YouTube, Prime Video, et des milliers d'applications Android.</p>
-                  <p>Sa résolution <strong className="text-white">4K Ultra HD avec support HDR</strong> vous offre une qualité d'image cinématographique depuis votre canapé. Le Wi-Fi double bande (2,4 GHz et 5 GHz) garantit un streaming fluide sans coupure ni mise en mémoire tampon.</p>
-                  <p>Compatible avec toutes les TV via HDMI, le <strong className="text-white">Pro Max Player</strong> se connecte en quelques secondes et fonctionne immédiatement. Livraison rapide partout en <strong className="text-white">France</strong>.</p>
+            {/* Hook */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }} className="text-center max-w-3xl mx-auto">
+              <h2 className="text-3xl sm:text-4xl font-bold mb-6">
+                Tout ce que vous aimez regarder.{' '}
+                <span className="bg-gradient-to-r from-violet-600 to-purple-500 bg-clip-text text-transparent">Enfin réuni en un seul endroit.</span>
+              </h2>
+              <p className="text-gray-300 text-lg leading-relaxed">
+                Imaginez une soirée parfaite : votre film préféré en qualité cinéma, le match de votre équipe sans coupure, les dessins animés adorés de vos enfants… tout ça sur votre TV, sans chercher, sans attendre. C'est exactement ce que le <strong className="text-white">Pro Max TV Player</strong> rend possible.
+              </p>
+            </motion.div>
+
+            {/* Experience cards */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+              <h3 className="text-2xl font-bold text-center mb-8">Une expérience pensée pour toute la famille</h3>
+              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                {[
+                  { emoji: '⚽', title: 'Sport en direct', desc: 'Tous vos matchs et événements sportifs, en temps réel, sans jamais rater une mi-temps ni une action.' },
+                  { emoji: '🎬', title: 'Cinéma & Séries', desc: 'Les dernières sorties, les séries dont tout le monde parle — vivez-les depuis votre canapé en 4K.' },
+                  { emoji: '👨‍👩‍👧‍👦', title: 'Pour toute la famille', desc: 'Dessins animés pour les petits, divertissement pour les grands. Chacun trouve ce qu\'il cherche.' },
+                  { emoji: '🌍', title: 'Contenus du monde entier', desc: 'Programmes internationaux, culture et divertissement venus des quatre coins du globe.' },
+                  { emoji: '🎭', title: 'Humour & Divertissement', desc: 'Spectacles, émissions, variety shows — de quoi passer des soirées inoubliables en famille ou entre amis.' },
+                  { emoji: '📺', title: 'Toujours disponible', desc: 'À la demande, quand vous voulez, aussi souvent que vous voulez. Votre programme, vos horaires.' },
+                ].map(({ emoji, title, desc }) => (
+                  <div key={title} className="bg-slate-900 border border-slate-800 rounded-2xl p-6 hover:-translate-y-1 transition-transform duration-300">
+                    <span className="text-3xl mb-4 block">{emoji}</span>
+                    <h4 className="font-bold text-lg mb-2">{title}</h4>
+                    <p className="text-gray-400 text-sm leading-relaxed">{desc}</p>
+                  </div>
+                ))}
+              </div>
+            </motion.div>
+
+            {/* Why it's different */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div className="space-y-6 text-gray-300 leading-relaxed">
+                  <h3 className="text-2xl font-bold text-white">Pas juste un appareil. Une nouvelle façon de regarder la TV.</h3>
+                  <p>
+                    Le <strong className="text-white">Pro Max TV Player</strong> ne se contente pas de diffuser du contenu — il transforme radicalement l'expérience. Fini les soirées à zapper sans rien trouver. Fini les plateformes limitées. Avec le <strong className="text-white">ProMaxTV</strong>, l'offre s'adapte à vos envies, pas l'inverse.
+                  </p>
+                  <p>
+                    Fluide, silencieux, et d'une simplicité désarmante. Même ceux qui ne sont pas à l'aise avec la technologie le maîtrisent en quelques minutes. Une seule télécommande, et vous avez tout sous la main.
+                  </p>
+                  <p>
+                    Votre entourage vous demandera comment vous faites. La réponse est simple : le <strong className="text-white">Pro Max Player</strong>, livré directement chez vous en France.
+                  </p>
                 </div>
+
+                {/* Tech specs — secondary, compact */}
                 <div className="bg-slate-900 border border-slate-800 rounded-2xl p-6">
-                  <h3 className="font-bold text-xl mb-5">Caractéristiques techniques</h3>
+                  <h4 className="font-bold text-lg mb-5 text-gray-300 uppercase tracking-wider text-sm">Fiche technique</h4>
                   <ul className="space-y-3 text-sm">
                     {[
                       ['Processeur', 'Quad-Core Édition 2026'],
                       ['RAM', '2 Go DDR3'],
                       ['Stockage', '16 Go eMMC'],
-                      ['Résolution', '4K Ultra HD (3840×2160) + HDR'],
-                      ['Wi-Fi', '2,4 GHz + 5 GHz double bande'],
+                      ['Résolution', '4K Ultra HD + HDR'],
+                      ['Wi-Fi', '2,4 GHz + 5 GHz'],
                       ['Système', 'Android TV'],
-                      ['Ports', 'HDMI 2.0, USB 2.0 ×2, AV'],
+                      ['Ports', 'HDMI 2.0, USB ×2'],
                       ['Bluetooth', '4.0'],
-                      ['Alimentation', '5V / 2A'],
                     ].map(([label, value]) => (
-                      <li key={label} className="flex justify-between border-b border-slate-800 pb-2 last:border-0 last:pb-0">
-                        <span className="text-gray-400">{label}</span>
+                      <li key={label} className="flex justify-between border-b border-slate-800 pb-2.5 last:border-0 last:pb-0">
+                        <span className="text-gray-500">{label}</span>
                         <span className="text-white font-medium">{value}</span>
                       </li>
                     ))}
                   </ul>
                 </div>
               </div>
+            </motion.div>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-                {features.map(({ icon: Icon, label, desc }) => (
-                  <div key={label} className="bg-slate-900 border border-slate-800 rounded-xl p-5 flex gap-4">
-                    <div className="bg-violet-600/20 rounded-lg p-2.5 h-fit">
-                      <Icon className="w-5 h-5 text-violet-400" />
-                    </div>
-                    <div>
-                      <p className="font-semibold text-sm">{label}</p>
-                      <p className="text-gray-400 text-xs mt-1">{desc}</p>
-                    </div>
-                  </div>
-                ))}
+            {/* Simple install banner */}
+            <motion.div initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
+              <div className="bg-gradient-to-r from-violet-600/20 to-purple-500/10 border border-violet-600/30 rounded-2xl p-8 text-center">
+                <p className="text-2xl font-bold mb-3">Prêt en moins de 5 minutes</p>
+                <p className="text-gray-300 max-w-xl mx-auto">
+                  Branchez le câble HDMI, connectez le Wi-Fi, et c'est parti. Aucune installation complexe, aucune configuration technique. Votre salon se transforme instantanément.
+                </p>
               </div>
             </motion.div>
+
           </div>
         </section>
 
