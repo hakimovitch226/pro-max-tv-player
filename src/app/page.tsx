@@ -1,11 +1,10 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Cpu, HardDrive, Zap, Wifi, CheckCircle, Truck, Headphones, Lock, Phone, Monitor } from 'lucide-react'
+import { Cpu, HardDrive, Zap, Wifi, CheckCircle, Truck, Headphones, Lock, Monitor } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
 import Footer from '@/components/Footer'
-import { fireWhatsAppConversion } from '@/lib/gtag'
 
 export default function Home() {
   const inTheBox = [
@@ -57,9 +56,9 @@ export default function Home() {
                 Profitez d'un streaming 4K fluide et de performances ultra-rapides avec le processeur Quad-Core Édition 2026.
               </p>
               <div className="flex gap-4 flex-wrap">
-                <a href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F" target="_blank" rel="noopener noreferrer" onClick={fireWhatsAppConversion} className="bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300">
-                  Commander via WhatsApp
-                </a>
+                <Link href="/produit" className="bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-4 rounded-full font-semibold text-lg hover:shadow-xl transition-all duration-300">
+                  Commander
+                </Link>
               </div>
             </motion.div>
 
@@ -263,16 +262,12 @@ export default function Home() {
 
             {/* CTA Button */}
             <motion.a
-              href="https://wa.me/12096768909?text=Bonjour%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20le%20Pro%20Max%20Tv%20Player%2C%20pouvez-vous%20me%20donner%20plus%20d%27infos%20%3F"
-              target="_blank"
-              rel="noopener noreferrer"
-              onClick={fireWhatsAppConversion}
-              className="w-full bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center gap-2"
+              href="/produit"
+              className="w-full bg-gradient-to-r from-violet-600 to-purple-500 px-8 py-5 rounded-full font-bold text-lg hover:shadow-2xl transition-all duration-300 flex items-center justify-center"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
-              <Phone className="w-6 h-6" />
-              Commander via WhatsApp
+              Commander
             </motion.a>
 
             {/* Features list below button */}
