@@ -27,7 +27,7 @@ const reviews = [
     city: 'Lyon',
     rating: 5,
     date: 'Mars 2026',
-    text: 'ProMaxTV fonctionne parfaitement avec ma TV. Installation simple en 5 minutes. Netflix, YouTube, tout marche sans lag. Très satisfaite !',
+    text: 'ProMaxTV fonctionne parfaitement avec ma TV. Installation simple en 5 minutes. Toutes mes applications marchent sans aucun lag. Très satisfaite !',
   },
   {
     name: 'Nicolas D.',

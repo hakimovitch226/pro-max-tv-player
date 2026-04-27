@@ -15,8 +15,8 @@ const faqs = [
     a: 'Le Pro Max TV Player est compatible avec toutes les télévisions disposant d\'un port HDMI, qu\'elles soient récentes ou anciennes.',
   },
   {
-    q: 'Puis-je installer Netflix sur le Pro Max TV Player ?',
-    a: 'Oui, Netflix, YouTube, Prime Video, Disney+ et toutes les applications disponibles sur le Google Play Store peuvent être installées.',
+    q: 'Puis-je installer mes applications de divertissement sur le Pro Max TV Player ?',
+    a: 'Oui, toutes vos applications de divertissement préférées sont disponibles et compatibles via le Google Play Store.',
   },
   {
     q: 'Comment mettre à jour le Pro Max TV Player ?',
@@ -54,7 +54,7 @@ export default function Assistance() {
             </h1>
             <p className="text-gray-400 text-lg mb-12">Notre équipe est disponible 24h/24 pour vous aider avec votre Pro Max TV Player.</p>
 
-            {/* Contact channels */}
+            {/* Contact options */}
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-14">
               {[
                 { icon: MessageCircle, title: 'WhatsApp', desc: 'Réponse en moins d\'1 heure', color: 'text-violet-500' },

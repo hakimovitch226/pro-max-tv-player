@@ -350,7 +350,7 @@ export default function Home() {
               Le <strong className="text-white">Pro Max TV Player</strong> est un Android TV Box de dernière génération conçu pour transformer n'importe quelle télévision en un centre de divertissement intelligent. Grâce à son processeur <strong className="text-white">Quad-Core Édition 2026</strong>, il offre une fluidité exceptionnelle pour regarder des films, jouer à des jeux et utiliser vos applications préférées.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed mb-6">
-              Avec le <strong className="text-white">Pro Max TV Player</strong>, accédez instantanément à Netflix, YouTube, Prime Video, et des milliers d'applications Android. Sa résolution <strong className="text-white">4K Ultra HD</strong> avec support HDR vous garantit une qualité d'image cinématographique depuis votre canapé.
+              Avec le <strong className="text-white">Pro Max TV Player</strong>, accédez instantanément à un univers de divertissement sans limites — films, sport, humour et bien plus. Sa résolution <strong className="text-white">4K Ultra HD</strong> avec support HDR vous garantit une qualité d'image cinématographique depuis votre canapé.
             </p>
             <p className="text-gray-300 text-lg leading-relaxed">
               Compact, puissant et facile à configurer, le <strong className="text-white">Pro Max TV Player</strong> est la solution idéale pour profiter d'un divertissement illimité à domicile. Compatible avec toutes les télévisions via HDMI, il se connecte en quelques secondes et fonctionne immédiatement.

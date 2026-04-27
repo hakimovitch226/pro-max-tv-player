@@ -15,7 +15,7 @@ const features = [
   {
     icon: Tv,
     title: 'Android TV 11',
-    desc: 'Accédez à des milliers d\'applications depuis le Google Play Store : Netflix, YouTube, Prime Video, Disney+, Spotify et bien plus encore.',
+    desc: 'Accédez à des milliers d\'applications de divertissement depuis le Google Play Store. Une expérience complète, toujours à jour.',
   },
   {
     icon: Wifi,
