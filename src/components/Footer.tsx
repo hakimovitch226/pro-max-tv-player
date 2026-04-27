@@ -12,6 +12,7 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-4">Produit</h4>
             <ul className="space-y-2 text-gray-400 text-sm">
+              <li><a href="/produit" className="hover:text-white transition-colors">Commander</a></li>
               <li><a href="/specifications" className="hover:text-white transition-colors">Spécifications</a></li>
               <li><a href="/fonctionnalites" className="hover:text-white transition-colors">Fonctionnalités</a></li>
               <li><a href="/assistance" className="hover:text-white transition-colors">Assistance</a></li>
